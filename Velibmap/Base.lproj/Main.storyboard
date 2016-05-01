@@ -16,22 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXq-cZ-aq9">
-                                <rect key="frame" x="265" y="286" width="71" height="28"/>
-                                <color key="backgroundColor" red="0.75572558782845245" green="0.77342437784029705" blue="0.77953206806282727" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
-                                <state key="normal" title="Update"/>
-                                <connections>
-                                    <action selector="updateInfoStationHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKz-xf-ktL"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="mXq-cZ-aq9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ali-XL-P8W"/>
-                            <constraint firstItem="mXq-cZ-aq9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nao-x0-qTe"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

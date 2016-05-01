@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Station Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36U-rC-pmS">
+                    <rect key="frame" x="0.0" y="5" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_local_parking" translatesAutoresizingMaskIntoConstraints="NO" id="i7w-2W-E8l">
+                    <rect key="frame" x="261" y="8" width="24" height="24"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_directions_bike" translatesAutoresizingMaskIntoConstraints="NO" id="OsZ-uu-w6V">
+                    <rect key="frame" x="261" y="37" width="24" height="24"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKq-O6-5JN">
+                    <rect key="frame" x="294" y="39" width="21" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XY-A5-Epj">
+                    <rect key="frame" x="294" y="10" width="21" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ouvert)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE3-lS-NZp">
+                    <rect key="frame" x="109" y="5" width="61" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OsZ-uu-w6V" firstAttribute="top" secondItem="i7w-2W-E8l" secondAttribute="bottom" constant="5" id="3Zo-rd-UP2"/>
+                <constraint firstItem="36U-rC-pmS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="4SO-rE-6kb"/>
+                <constraint firstItem="OsZ-uu-w6V" firstAttribute="centerX" secondItem="i7w-2W-E8l" secondAttribute="centerX" id="AeG-Qi-iga"/>
+                <constraint firstItem="OsZ-uu-w6V" firstAttribute="centerY" secondItem="UKq-O6-5JN" secondAttribute="centerY" id="BxL-hj-9Tj"/>
+                <constraint firstItem="UKq-O6-5JN" firstAttribute="trailing" secondItem="6XY-A5-Epj" secondAttribute="trailing" id="Rao-nL-XUB"/>
+                <constraint firstItem="DE3-lS-NZp" firstAttribute="centerY" secondItem="36U-rC-pmS" secondAttribute="centerY" id="XOu-1r-eJM"/>
+                <constraint firstItem="i7w-2W-E8l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Y1J-Sa-Szj"/>
+                <constraint firstAttribute="trailing" secondItem="6XY-A5-Epj" secondAttribute="trailing" constant="5" id="hzb-Ru-Gg3"/>
+                <constraint firstItem="DE3-lS-NZp" firstAttribute="leading" secondItem="36U-rC-pmS" secondAttribute="trailing" constant="5" id="lfz-zT-2aE"/>
+                <constraint firstItem="i7w-2W-E8l" firstAttribute="centerY" secondItem="6XY-A5-Epj" secondAttribute="centerY" id="mVY-cA-bDf"/>
+                <constraint firstItem="36U-rC-pmS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mxX-gL-pmB"/>
+                <constraint firstAttribute="trailing" secondItem="i7w-2W-E8l" secondAttribute="trailing" constant="35" id="xlo-Tt-6EG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="151" y="24.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_directions_bike" width="24" height="24"/>
+        <image name="ic_local_parking" width="24" height="24"/>
+    </resources>
+</document>

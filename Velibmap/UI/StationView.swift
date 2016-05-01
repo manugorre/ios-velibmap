@@ -75,7 +75,6 @@ class StationView: UIView {
     @IBAction func openInfoTapHandlers(recognizer: UIGestureRecognizer) {
         let widthView = superview!.frame.width
         let heightView = superview!.frame.height
-        
         UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseInOut, animations: {
             if !self.headerStaionState {
                 self.frame = CGRectMake(0 , heightView - 300, widthView, 300)
