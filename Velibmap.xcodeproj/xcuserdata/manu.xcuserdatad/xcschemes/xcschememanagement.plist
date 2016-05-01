@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>VelibmapWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3221C9E51CD676010068403D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>328107861CD55A52005A9AE5</key>
 		<dict>
 			<key>primary</key>
