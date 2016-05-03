@@ -11,13 +11,17 @@ import GoogleMaps
 
 class MapView: UIView {
     
-    @IBOutlet weak var mapView: UIView!
+    var stations = [Station]()
+    var markers = [GMSMarker]()
+    
+    @IBOutlet weak var mapView: GMSMapView!
+
     
     
     // MARK: UIView
     
     override func awakeFromNib() {
-        setupGoogleMap()
+        fetchStations()
     }
     
     
@@ -25,14 +29,30 @@ class MapView: UIView {
     // MARK: Setup
     
     func setupGoogleMap() {
-        let camera = GMSCameraPosition.cameraWithLatitude(-33.86,
-                                                          longitude: 151.20, zoom: 6)
-        let map = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
-        map.myLocationEnabled = true
-        mapView = map
+        let camera: GMSCameraPosition = GMSCameraPosition.cameraWithLatitude(48.857165, longitude: 2.354613, zoom: 8.0)
+        mapView.camera = camera
         
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
-//        marker.map = map
+        for station in stations {
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2DMake(station.lat, station.lng)
+            marker.map = mapView
+            markers.append(marker)
+        }
+    }
+    
+    
+    
+    // MARK: API
+    
+    func fetchStations() {
+        
+        let stationWS = StationWS()
+        
+        stationWS.fetchAllStations() { responseObject in
+            print("responseObject = \(responseObject![0].lat);")
+            self.stations = responseObject!
+            self.setupGoogleMap()
+            return
+        }
     }
 }

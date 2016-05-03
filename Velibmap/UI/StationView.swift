@@ -63,7 +63,7 @@ class StationView: UIView {
     private func updateStateView() {
         if let station = station {
             UIView.animateWithDuration(0.25, animations: {
-                self.stateView.backgroundColor = station.state ? UIColor.greenColor() : UIColor.brownColor()
+                self.stateView.backgroundColor = station.status ? UIColor.greenColor() : UIColor.brownColor()
             })
         }
     }

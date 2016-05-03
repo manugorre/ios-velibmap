@@ -90,8 +90,5 @@ class ViewController: UIViewController, UITextViewDelegate, CLLocationManagerDel
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
-    
-
-
 }
 
